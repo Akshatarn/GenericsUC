@@ -12,7 +12,7 @@ namespace MaximumGenerics
         {
             Console.WriteLine("Welcome to Generics Find Maximum Program");
             Console.WriteLine("Welcome to Generic Use Case's ");
-            FindMax.FindMaxValue(20, 30, 40);
+            FindMax.FindMaxValue(22.34f, 30.45f, 40.56f); // Finding maximum of 3 float numbers
             
         }
     }
