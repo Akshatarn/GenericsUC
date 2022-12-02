@@ -20,9 +20,9 @@ namespace MaximumGenerics
             switch (option)
             {
                 case 1:
-                    FindMax.FindMaxValue(20, 30, 40);                   //UC1 finding max out of 3 int.
-                    FindMax.FindMaxValue(20.20f, 30.20f, 40.40f);       //UC2 finding max out of 3 float.
-                    FindMax.FindMaxValue("abc", "def", "ghi");       //UC3 finding max out of 3 string.
+                    FindMaxm.FindMaxValue(20, 30, 40);                   //UC1 finding max out of 3 int.
+                    FindMaxm.FindMaxValue(20.20f, 30.20f, 40.40f);       //UC2 finding max out of 3 float.
+                    FindMaxm.FindMaxValue("abc", "def", "ghi");       //UC3 finding max out of 3 string.
                     break;
                 case 2:
                     FindMaxGenericMethod<int>.FindMaxValue(11, 23, 30);       //find max using generic method
@@ -39,6 +39,12 @@ namespace MaximumGenerics
                 case 4:     //UC4 .
                     FindMaxParams.MaxValue(45, 23, 54, 6, 23, 43);  //using param -sample 1
                     FindMaxParams.MaxValue(45, 6, 23, 43);      //using param-sample 2
+                    break;
+                case 5:     
+                    
+                    int[] arr = { 23, 21, 32, 45, 65, 33 };
+                    GenericMaximumUC5<int> genericObj = new GenericMaximumUC5<int>(arr);
+                    genericObj.PrintMaxValue();
                     break;
                 default:
                     Console.WriteLine("Please choose number within given range!");
