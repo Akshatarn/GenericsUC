@@ -36,6 +36,10 @@ namespace MaximumGenerics
                     new FindMaxGenericClass<float>(20.45f, 30.11f, 12.99f).TestMaximum();
                     new FindMaxGenericClass<string>("abc", "def", "ghi").TestMaximum();
                     break;
+                case 4:     //UC4 .
+                    FindMaxParams.MaxValue(45, 23, 54, 6, 23, 43);  //using param -sample 1
+                    FindMaxParams.MaxValue(45, 6, 23, 43);      //using param-sample 2
+                    break;
                 default:
                     Console.WriteLine("Please choose number within given range!");
                     break;

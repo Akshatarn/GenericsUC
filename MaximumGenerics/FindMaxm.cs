@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace MaximumGenerics
 {
-    public class FindMaxGenericMethod<T> where T : IComparable
+    internal class FindMaxm
     {
-        public static void FindMaxValue(T first, T second, T third)  //UC3-refactor 1 (find max using generic method)
+        public static void FindMaxValue(float first, float second, float third)
         {
-            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)  //data type is unknown bcoz we are using generic in the method hence error will occur so 
+            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
             {
                 Console.WriteLine($"{first} is greater");
             }
