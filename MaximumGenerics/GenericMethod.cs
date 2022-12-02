@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace MaximumGenerics
 {
-    public class FindMax
+    public class FindMaxGenericMethod<T> where T : IComparable
     {
-        public static void FindMaxValue(float first, float second, float third)
+        public static void FindMaxValue(T first, T second, T third)  
         {
-            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
+            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)  
             {
                 Console.WriteLine($"{first} is greater");
             }
